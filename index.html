@@ -1,0 +1,245 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact — HYDRAUPRO</title>
+  <meta name="description" content="Contactez HYDRAUPRO pour vos besoins en assainissement, distribution d’eau potable et irrigation au Sénégal." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="contact.css" />
+  <script defer src="main.js"></script>
+</head>
+<body>
+  <header class="hero-shell hero-shell--contact" id="top">
+    <div class="hero-shell__bg"></div>
+    <div class="hero-shell__overlay"></div>
+
+    <div class="top-contact">
+      <div class="top-contact__place">Mbour<br>Sénégal</div>
+      <div class="top-contact__phone">+221 07 89 58 95 86</div>
+    </div>
+
+    <nav class="service-nav" aria-label="Navigation principale">
+      <div class="container service-nav__inner">
+        <a class="service-nav__brand brand-with-logo" href="index.html">
+          <img src="images/logo-hydraupro.png" alt="Logo HYDRAUPRO">
+          <span>HYDRAUPRO</span>
+        </a>
+
+        <button class="service-nav__toggle" type="button" aria-expanded="false" aria-label="Ouvrir le menu">
+          <span></span><span></span><span></span>
+        </button>
+
+        <ul class="service-nav__list">
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="assainissement.html">Assainissement</a></li>
+          <li><a href="distribution.html">Distribution</a></li>
+          <li><a href="irrigation.html">Irrigation</a></li>
+          <li><a href="actualites.html">Actualités</a></li>
+          <li><a class="active" href="contact.html">Contact</a></li>
+        </ul>
+
+        <a class="nav-cta" href="#contactForm">Demander un devis</a>
+      </div>
+    </nav>
+
+    <div class="container hero-shell__content hero-shell__content--contact">
+      <div class="contact-hero">
+        <div class="contact-hero__copy">
+          <span class="hero-kicker">Contact</span>
+          <h1>Parlons de votre projet</h1>
+          <p>
+            Vous avez un besoin en assainissement autonome, distribution d’eau potable ou irrigation ?
+            Décrivez-nous votre contexte, votre site et vos attentes. Nous vous répondrons avec une approche
+            claire, sérieuse et adaptée au terrain.
+          </p>
+
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#contactForm">Remplir le formulaire</a>
+            <a class="btn btn-secondary" href="mailto:contact@hydraupro.sn">Nous écrire</a>
+          </div>
+
+          <div class="hero-trust">
+            <span>Réponse rapide</span>
+            <span>Approche technique claire</span>
+            <span>Accompagnement personnalisé</span>
+          </div>
+        </div>
+
+        <aside class="contact-hero__aside">
+          <article class="contact-quick-card">
+            <strong>Contact direct</strong>
+            <ul>
+              <li><span>Téléphone</span><a href="tel:+2210789589586">+221 07 89 58 95 86</a></li>
+              <li><span>Email</span><a href="mailto:contact@hydraupro.sn">contact@hydraupro.sn</a></li>
+              <li><span>Adresse</span><span>Villa 376 Médine, M’Bour — Sénégal</span></li>
+            </ul>
+          </article>
+        </aside>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="intro-band">
+      <div class="container intro-band__grid">
+        <article class="intro-pill">
+          <strong>Un premier échange utile</strong>
+          <p>Pour comprendre votre besoin avant d’orienter une solution.</p>
+        </article>
+        <article class="intro-pill">
+          <strong>Une lecture technique claire</strong>
+          <p>Pour éviter les réponses floues ou mal adaptées au projet.</p>
+        </article>
+        <article class="intro-pill">
+          <strong>Un contact accessible</strong>
+          <p>Pour avancer simplement sur votre étude, votre devis ou votre question.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-heading">
+          <span class="section-kicker">Nous contacter</span>
+          <h2>Expliquez-nous votre besoin</h2>
+          <p>
+            Cette page est pensée pour rassurer, structurer la prise de contact et donner une image plus professionnelle
+            de HYDRAUPRO. Le formulaire ci-dessous permet de mieux comprendre votre projet dès le premier échange.
+          </p>
+        </div>
+
+        <div class="contact-layout">
+          <form id="contactForm" class="contact-card contact-form" action="#" method="post" novalidate>
+            <div class="form-grid">
+              <div class="field">
+                <label for="prenom">Prénom</label>
+                <input id="prenom" name="prenom" type="text" placeholder="Votre prénom" required>
+              </div>
+
+              <div class="field">
+                <label for="nom">Nom</label>
+                <input id="nom" name="nom" type="text" placeholder="Votre nom" required>
+              </div>
+            </div>
+
+            <div class="form-grid">
+              <div class="field">
+                <label for="email">Email</label>
+                <input id="email" name="email" type="email" placeholder="Votre email" required>
+              </div>
+
+              <div class="field">
+                <label for="tel">Téléphone</label>
+                <input id="tel" name="tel" type="tel" placeholder="+221 ..." inputmode="tel">
+              </div>
+            </div>
+
+            <div class="form-grid">
+              <div class="field">
+                <label for="service">Service concerné</label>
+                <select id="service" name="service" required>
+                  <option value="">Sélectionnez un service</option>
+                  <option value="assainissement">Assainissement autonome</option>
+                  <option value="distribution">Distribution d’eau potable</option>
+                  <option value="irrigation">Irrigation</option>
+                  <option value="autre">Autre besoin</option>
+                </select>
+              </div>
+
+              <div class="field">
+                <label for="localisation">Localisation du projet</label>
+                <input id="localisation" name="localisation" type="text" placeholder="Ville / zone du projet">
+              </div>
+            </div>
+
+            <div class="field">
+              <label for="sujet">Sujet</label>
+              <input id="sujet" name="sujet" type="text" placeholder="Objet de votre demande" required>
+            </div>
+
+            <div class="field field--textarea">
+              <label for="message">Votre message</label>
+              <textarea id="message" name="message" rows="7" placeholder="Décrivez votre besoin, le type de projet, les contraintes du site ou vos attentes." required></textarea>
+            </div>
+
+            <label class="consent">
+              <input type="checkbox" name="rgpd" required>
+              <span>J’accepte que mes informations soient utilisées pour me recontacter et répondre à ma demande.</span>
+            </label>
+
+            <div class="form-actions">
+              <button type="submit" class="btn btn-primary">Envoyer mon message</button>
+              <a class="btn btn-secondary" href="mailto:contact@hydraupro.sn">Envoyer un email</a>
+            </div>
+
+            <p class="form-note">
+              Ce formulaire peut ensuite être relié à EmailJS, Formspree ou à un backend d’envoi.
+            </p>
+          </form>
+
+          <aside class="contact-card contact-info">
+            <div class="contact-info__block">
+              <span class="section-kicker">Coordonnées</span>
+              <h3>Un point de contact clair et rassurant</h3>
+              <p>
+                HYDRAUPRO privilégie une communication simple, structurée et utile pour mieux comprendre
+                les besoins des particuliers, des professionnels et des porteurs de projets.
+              </p>
+            </div>
+
+            <div class="info-list">
+              <div class="info-item">
+                <strong>Téléphone</strong>
+                <a href="tel:+2210789589586">+221 07 89 58 95 86</a>
+              </div>
+              <div class="info-item">
+                <strong>Email</strong>
+                <a href="mailto:contact@hydraupro.sn">contact@hydraupro.sn</a>
+              </div>
+              <div class="info-item">
+                <strong>Adresse</strong>
+                <span>Villa 376 Médine, M’Bour — Sénégal</span>
+              </div>
+            </div>
+
+            <div class="map-wrap">
+              <iframe
+                class="map"
+                src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3865.937225370133!2d-16.928427225186216!3d14.31507908400385!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMTTCsDE4JzU0LjMiTiAxNsKwNTUnMzMuMSJX!5e0!3m2!1sfr!2sfr!4v1772816760747!5m2!1sfr!2sfr"
+                style="border:0;"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+                title="Carte HYDRAUPRO Mbour">
+              </iframe>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta-band">
+      <div class="container">
+        <h2>Un projet ? Une question ? Parlons-en.</h2>
+        <p>
+          Contactez HYDRAUPRO pour échanger sur vos besoins en assainissement, distribution d’eau potable ou irrigation.
+          Nous vous répondrons rapidement avec une approche claire et adaptée.
+        </p>
+        <div class="btn-row">
+          <a class="btn btn-primary btn-big" href="#contactForm">Remplir le formulaire</a>
+          <a class="btn btn-secondary btn-big" href="assainissement.html">Voir une prestation</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container site-footer__inner">
+      <small>© 2026 HYDRAUPRO — Assainissement, distribution d’eau potable et irrigation au Sénégal.</small>
+      <small><a href="mailto:contact@hydraupro.sn">contact@hydraupro.sn</a></small>
+    </div>
+  </footer>
+</body>
+</html>
